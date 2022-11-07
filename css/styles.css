@@ -63,7 +63,7 @@ hr{
 }
 
 .main-image{
-    background-image: url(/images/illustration-woman-online-mobile.svg);
+    background-image: url(../images/illustration-woman-online-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position:top;
@@ -112,7 +112,7 @@ hr{
 
 .faq-question::after{
     content: '';
-    background-image: url(/images/icon-arrow-down.svg);
+    background-image: url(../images/icon-arrow-down.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
@@ -159,7 +159,7 @@ hr{
 @media (min-width:56em){
     
     .container{
-        background-image: url(/images/bg-pattern-desktop.svg);
+        background-image: url(../images/bg-pattern-desktop.svg);
         background-size:1000px;
         background-repeat: no-repeat;
         background-position:bottom -140px right 625px;
@@ -175,7 +175,7 @@ hr{
         
     }
     .main-image{
-        background-image: url(/images/illustration-woman-online-desktop.svg);
+        background-image: url(../images/illustration-woman-online-desktop.svg);
         background-repeat: no-repeat, repeat;
         background-size: cover, 100%;
         background-position: right, left;
