@@ -57,6 +57,11 @@ hr{
     background:hsl(240, 5%, 91%);
 }
 
+.attribution{
+    text-align: center;
+    
+}
+
 .main-image{
     background-image: url(/images/illustration-woman-online-mobile.svg);
     background-size: contain;
@@ -152,9 +157,7 @@ hr{
 }
 
 @media (min-width:56em){
-    body{
-        z-index: 1;
-    }
+    
     .container{
         background-image: url(/images/bg-pattern-desktop.svg);
         background-size:1000px;
@@ -194,6 +197,10 @@ hr{
     }
     .main-title{
         text-align: left;
+    }
+
+    .attribution{
+        margin-top: 600px;
     }
     
 }
