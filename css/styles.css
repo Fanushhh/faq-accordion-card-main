@@ -1,0 +1,204 @@
+:root{
+    --text-blue: hsl(238, 29%, 16%);
+    --text-dkblue:hsl(240, 6%, 50%);
+    --text-xdkblue:hsl(237, 12%, 33%);
+    --text-red:hsl(14, 88%, 65%);
+    --gradient-violet:hsl(273, 75%, 66%);
+    --gradient-blue:hsl(240, 73%, 65%)
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+h4{
+    font-size: 14px;
+    font-weight: 400;
+    margin:0;
+    padding: 12px 0;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+p{
+    color:hsl(238, 29%, 16%, 0.6);
+    margin: 0;
+    padding-bottom: 10px;
+}
+button{
+    border: none;
+    background-color: #fff;
+    padding: 0;
+}
+body{
+    background: linear-gradient(var(--gradient-violet),var(--gradient-blue));
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    position: relative;
+}
+hr{
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background:hsl(240, 5%, 91%);
+}
+
+.main-image{
+    background-image: url(/images/illustration-woman-online-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:top;
+    width: 100%;
+    max-width: 230px;
+    height: 100%;
+    max-height: 200px;
+    position: absolute; 
+    top:-105px;
+    align-self: center;
+    filter: drop-shadow(0 8mm 0 hsl(240, 73%, 65%, 0.1));
+}
+
+
+.main-title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+.container{
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 6rem 1.5rem 3rem 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0 25px 25px hsl(238, 29%, 16%, 0.3);;
+}
+.faq-question{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-question:hover{
+    color:var(--text-red)
+}
+
+
+.faq-question::after{
+    content: '';
+    background-image: url(/images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    display: block;
+    width: 10px;
+    height: 10px;
+    transition: transform 0.3s;
+    
+}
+.arrow-icon{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+.faq-answer{
+    padding-right: 20px;
+}
+.dropdown-button{
+    border: none;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.show{
+    display: none;
+    color:black;
+    font-weight: 700;
+}
+.box-image{
+    display: none;
+}
+
+
+.bold{
+    font-weight: 700;
+}
+
+.collapsing::after{
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+@media (min-width:56em){
+    body{
+        z-index: 1;
+    }
+    .container{
+        background-image: url(/images/bg-pattern-desktop.svg);
+        background-size:1000px;
+        background-repeat: no-repeat;
+        background-position:bottom -140px right 625px;
+        position: fixed;
+        flex-direction: row;
+        max-width: 1000px;
+        height: auto;
+        justify-content: flex-end;
+        padding: 3rem 5rem 5rem 1rem;
+    }
+    .question-section{
+        width: 40%;
+        
+    }
+    .main-image{
+        background-image: url(/images/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat, repeat;
+        background-size: cover, 100%;
+        background-position: right, left;
+        height: 350px;
+        max-height: 100%;
+        width: 100%;
+        max-width: 375px;
+        top: 75px;
+        left:0;
+        filter: none;
+
+    }
+    .box-image{
+        position: absolute;
+        top:38%;
+        left: -100px;
+        display: inline-block;
+        
+    }
+    .main-title{
+        text-align: left;
+    }
+    
+}
+
+
+
+
+
